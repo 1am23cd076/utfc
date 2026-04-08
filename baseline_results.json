@@ -1,0 +1,49 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "results": [
+    {
+      "task_id": "easy",
+      "total_reward": 13.8,
+      "grader_score": 1.0,
+      "steps_taken": 3,
+      "resolved": [
+        "ddos",
+        "phishing",
+        "card_swipe_mismatch",
+        "spam_flood"
+      ]
+    },
+    {
+      "task_id": "medium",
+      "total_reward": 15.1,
+      "grader_score": 1.0,
+      "steps_taken": 4,
+      "resolved": [
+        "ddos",
+        "db_breach",
+        "exploit_chain",
+        "cctv_anomaly",
+        "drone_thermal"
+      ]
+    },
+    {
+      "task_id": "hard",
+      "total_reward": 18.7,
+      "grader_score": 0.95,
+      "steps_taken": 5,
+      "resolved": [
+        "phishing",
+        "exploit_chain",
+        "drone_thermal",
+        "db_breach",
+        "ddos",
+        "spam_flood",
+        "cctv_anomaly",
+        "card_swipe_mismatch",
+        "physical_fusion_breach",
+        "false_positive"
+      ]
+    }
+  ],
+  "overall_score": 0.9833
+}

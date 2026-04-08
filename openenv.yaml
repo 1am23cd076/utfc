@@ -1,0 +1,50 @@
+name: unified-threat-fusion-center
+version: "1.0.0"
+description: >
+  A fully simulated Security Operations Center (SOC) where an autonomous AI agent
+  detects, correlates, and mitigates cyber and physical threats across a virtual
+  corporate campus. Features 10 interconnected threat scenarios across cyber and
+  physical domains with deterministic grading.
+author: "Team UnifiedSOC"
+tags:
+  - openenv
+  - cybersecurity
+  - soc
+  - multi-modal
+  - reinforcement-learning
+  - agentic-ai
+tasks:
+  - id: easy
+    name: "Single Threat Response"
+    description: "One isolated threat — identify and mitigate within 30 steps."
+    max_steps: 30
+    difficulty: easy
+  - id: medium
+    name: "Multi-Vector Attack"
+    description: "Three simultaneous threats across cyber and physical domains."
+    max_steps: 60
+    difficulty: medium
+  - id: hard
+    name: "Full Fusion Breach"
+    description: "All 10 threat types active simultaneously. Perfect sequencing required."
+    max_steps: 100
+    difficulty: hard
+actions:
+  - scan_cyber
+  - patch_vuln
+  - block_port
+  - alert_team
+  - quarantine_node
+  - deploy_drone
+  - verify_access
+  - lockdown_zone
+observation_type: text
+reward_range: [-10.0, 10.0]
+docker:
+  dockerfile: server/Dockerfile
+  port: 7860
+endpoints:
+  reset: POST /reset
+  step: POST /step
+  state: GET /state
+  health: GET /health

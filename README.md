@@ -39,7 +39,7 @@ UnifiedThreatFusionCenter/
 ├──Dockerfile
 └── server/
     ├── app.py           # FastAPI server
-    ├── requirements.txt
+    └── requirements.txt
 ```
 
 ---

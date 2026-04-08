@@ -16,7 +16,7 @@ from openai import OpenAI
 # ── Config ────────────────────────────────────────────────────────────────────
 API_BASE_URL  = os.environ.get("API_BASE_URL",  "https://api.groq.com/openai/v1")
 MODEL_NAME    = os.environ.get("MODEL_NAME",    "llama-3.3-70b-versatile")
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_API_KEY = os.environ.get("Hf_TOKEN")
 ENV_NAME      = "unified_threat_fusion_center"
 
 # HF_SPACE_URL: on HuggingFace Spaces the server runs on localhost:7860 internally

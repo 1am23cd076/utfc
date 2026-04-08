@@ -36,7 +36,7 @@ UnifiedThreatFusionCenter/
 ├── inference.py         # Baseline LLM agent script
 ├── openenv.yaml         # OpenEnv manifest
 ├── local_test.py        # Local validation (no API key needed)
-├──Dockerfile
+├── Dockerfile
 └── server/
     ├── app.py           # FastAPI server
     └── requirements.txt
